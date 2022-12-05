@@ -4,33 +4,49 @@ import img1 from "./assets/Jepretan Layar 2565-10-05 pukul 15.10.11.png";
 import img2 from "./assets/Jepretan Layar 2565-10-05 pukul 17.05.44.png";
 import img3 from "./assets/Jepretan Layar 2565-11-22 pukul 15.17.10.png"
 
+const Nav = () => {
+  return (
+    <div id="nav" className="hidden flex-row bg-slate-400 justify-around font-sand">
+      <a className=" w-full text-center hover:bg-slate-500 p-1 hover:text-white" href="#beranda">Beranda</a>
+      <a className=" w-full text-center hover:bg-slate-500 p-1 hover:text-white" href="#portofolio">My Project</a>
+      <a className=" w-full text-center hover:bg-slate-500 p-1 hover:text-white" href="https://instagram.com/hidayattofik_">Contact Me</a>
+    </div>
+  )
+}
+function openNav() {
+  const element = document.getElementById('nav');
+  element.style.display = 'flex';
+}
+
 const Main = () => {
   return (
     <>
 
     {/* this is for mobile */}
 
-    <div className="sm:hidden flex flex-row m-2 gap-3 overflow-auto z-10">
+    <Nav />
+
+    <div id="beranda" className="sm:hidden flex flex-row m-3 gap-3 overflow-auto z-10">
         <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
-          <p className="p-6 text-center w-48 h-48"><q>Hi ! i am Tofik Hidayat</q></p>
+          <p className="p-6 text-center w-56 h-56 hover:bg-slate-100 hover:rounded-xl hover:text-black"><q>Hi ! i am Tofik Hidayat</q></p>
         </div>
         <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
-          <p className="p-6 text-center w-48 h-48"><q>Youll get over it</q></p>
+          <p className="p-6 text-center w-56 h-56 hover:bg-slate-100 hover:rounded-xl hover:text-black"><q>Youll get over it</q></p>
         </div>
         <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
-          <p className="p-6 text-center w-48 h-48"><q>when there is a will, there is a way</q></p>
+          <p className="p-6 text-center w-56 h-56 hover:bg-slate-100 hover:rounded-xl hover:text-black"><q>when there is a will, there is a way</q></p>
         </div>
         <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
-          <p className="p-6 text-center w-48 h-48"><q>halah bacot su</q></p>
+          <p className="p-6 text-center w-56 h-56 hover:bg-slate-100 hover:rounded-xl hover:text-black"><q>Tetaplah hidup walau tidak berguna</q></p>
         </div>
       </div>
 
-      <div className=" bg-orange-200 m-2 p-2 text-center rounded-xl font-sand md:hidden">
-        <h2>Welcome to My Portofolio</h2>
+      <div className=" bg-orange-200 m-4 p-2 text-center rounded-xl font-sand md:hidden">
+        <h2 className=" animate-pulse">Welcome to My Portofolio</h2>
       </div>
 
-      <div className="flex flex-row overflow-auto">
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden animate-scrolls">
+      <div id="portofolio" className="flex flex-row overflow-auto">
+        <div className=" bg-neutral-600 m-4 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Books Manager With local Storage</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3">
             <div className=" flex flex-col gap-3 text-grey">
@@ -40,7 +56,7 @@ const Main = () => {
             <img src={img1} alt="img" />
           </div>
         </div>
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 md:hidden animate-scrolls">
+        <div className=" bg-neutral-600 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 md:hidden ">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Whatsapp Clone</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3 h-full">
             <div className=" flex flex-col gap-3 text-slate-800">
@@ -50,7 +66,7 @@ const Main = () => {
             <img className=" rounded-xl" src={img2} alt="image" />
           </div>
         </div>
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden animate-scrolls">
+        <div className=" bg-neutral-600 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden ">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Djamet Pulsa</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3">
             <div className=" flex flex-col gap-3 text-slate-800 h-36">
@@ -60,11 +76,7 @@ const Main = () => {
             <img className=" rounded-xl h-80 w-80" src={img3} alt="image" />
           </div>
         </div>
-
       </div>
-
-
-      
     </>
   )
 }
@@ -77,7 +89,7 @@ const Header = () => {
 
       <div className="bg-slate-800 p-6 text-white font-sand text-3xl text-center sm:hidden sticky top-0 z-20">
       <h1>DjametCoder</h1>
-      <i className="fa fa-bars absolute left-7 top-7"></i>
+      <i id="hambs" onClick={openNav} className="fa fa-bars absolute left-7 top-7 cursor-pointer"></i>
       </div>
 
       {/* this is for pc */}
