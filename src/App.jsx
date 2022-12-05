@@ -16,6 +16,23 @@ const Nav = () => {
 function openNav() {
   const element = document.getElementById('nav');
   element.style.display = 'flex';
+
+  const hambs = document.getElementById('hambs');
+  hambs.style.display = 'none';
+
+  const elements = document.getElementById('times');
+  elements.style.display = 'block';
+}
+
+function closeNav() {
+  const navsx = document.getElementById('nav');
+  navsx.style.display = 'none';
+
+  const hambs = document.getElementById('hambs');
+  hambs.style.display = 'block';
+
+  const elements = document.getElementById('times');
+  elements.style.display = 'none';
 }
 
 const Main = () => {
@@ -89,7 +106,8 @@ const Header = () => {
 
       <div className="bg-slate-800 p-6 text-white font-sand text-3xl text-center sm:hidden sticky top-0 z-20">
       <h1>DjametCoder</h1>
-      <i id="hambs" onClick={openNav} className="fa fa-bars absolute left-7 top-7 cursor-pointer"></i>
+      <i id="hambs" onClick={openNav} className="fa fa-bars absolute left-7 top-7 cursor-pointer transition-2s"></i>
+      <i id="times" onClick={closeNav} className="fa fa-times absolute left-7 top-7 cursor-pointer hidden"></i>
       </div>
 
       {/* this is for pc */}
