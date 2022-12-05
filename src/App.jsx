@@ -1,4 +1,8 @@
 import React from "react";
+import "./App.css";
+import img1 from "./assets/Jepretan Layar 2565-10-05 pukul 15.10.11.png";
+import img2 from "./assets/Jepretan Layar 2565-10-05 pukul 17.05.44.png";
+import img3 from "./assets/Jepretan Layar 2565-11-22 pukul 15.17.10.png"
 
 const Main = () => {
   return (
@@ -33,7 +37,7 @@ const Main = () => {
               <p>This is my first project, can be used to store your reading list also have local storage feature</p>
               <p>Link Project : <a className=" text-blue" href="https://b0oksmanager.netlify.app/">Click Here</a></p>  
             </div>
-            <img className=" rounded-xl" src="src/assets/Jepretan Layar 2565-10-05 pukul 15.10.11.png" alt="image" />
+            <img src={img1} alt="img" />
           </div>
         </div>
         <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 md:hidden">
@@ -43,7 +47,7 @@ const Main = () => {
               <p>Actually its just for fun, you can check below</p>
               <p>Link Project : <a className=" text-blue" href="https:/wacl0ne.netlify.app/">Click Here</a></p>  
             </div>
-            <img className=" rounded-xl" src="src/assets/Jepretan Layar 2565-10-05 pukul 17.05.44.png" alt="image" />
+            <img className=" rounded-xl" src={img2} alt="image" />
           </div>
         </div>
         <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden">
@@ -53,7 +57,7 @@ const Main = () => {
               <p>This is my first project, can be used to store your reading list also have local storage feature</p>
               <p>Link Project : <a className=" text-blue" href="https://b0oksmanager.netlify.app/">Click Here</a></p>  
             </div>
-            <img className=" rounded-xl h-80 w-80" src="src/assets/Jepretan Layar 2565-11-22 pukul 15.17.10.png" alt="image" />
+            <img className=" rounded-xl h-80 w-80" src={img3} alt="image" />
           </div>
         </div>
 
