@@ -9,6 +9,14 @@ module.exports = {
       },
       Image: {
         'books': "url('src/assets/Jepretan Layar 2565-10-05 pukul 15.10.11.png')"
+      },
+      animation: {
+        scrolls: 'scrolls 2s linear'
+      },
+      keyframes: {
+        scrolls: {
+          '50%': {transform: 'translateX(-80%)'}
+        }
       }
     },
   },

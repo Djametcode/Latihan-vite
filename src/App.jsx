@@ -10,18 +10,18 @@ const Main = () => {
 
     {/* this is for mobile */}
 
-    <div className="sm:hidden flex flex-row m-2 gap-3 overflow-auto">
-        <div className=" bg-neutral-600 text-white font-sand rounded-xl">
-          <p className="p-6 text-center w-48 h-48"><q>Hi ! i am Tofik Hidayat</q><br /> Front end developer</p>
+    <div className="sm:hidden flex flex-row m-2 gap-3 overflow-auto z-10">
+        <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
+          <p className="p-6 text-center w-48 h-48"><q>Hi ! i am Tofik Hidayat</q></p>
         </div>
-        <div className=" bg-neutral-600 text-white font-sand rounded-xl">
-          <p className="p-6 text-center w-48 h-48"><q>Youll get over it</q> Front end developer</p>
+        <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
+          <p className="p-6 text-center w-48 h-48"><q>Youll get over it</q></p>
         </div>
-        <div className=" bg-neutral-600 text-white font-sand rounded-xl">
-          <p className="p-6 text-center w-48 h-48"><q>Hi ! i am Tofik Hidayat</q> Front end developer</p>
+        <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
+          <p className="p-6 text-center w-48 h-48"><q>when there is a will, there is a way</q></p>
         </div>
-        <div className=" bg-neutral-600 text-white font-sand rounded-xl">
-          <p className="p-6 text-center w-48 h-48"><q>Hi ! i am Tofik Hidayat</q> Front end developer</p>
+        <div className=" bg-neutral-600 text-white font-sand rounded-xl animate-scrolls">
+          <p className="p-6 text-center w-48 h-48"><q>halah bacot su</q></p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ const Main = () => {
       </div>
 
       <div className="flex flex-row overflow-auto">
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden">
+        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden animate-scrolls">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Books Manager With local Storage</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3">
             <div className=" flex flex-col gap-3 text-grey">
@@ -40,7 +40,7 @@ const Main = () => {
             <img src={img1} alt="img" />
           </div>
         </div>
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 md:hidden">
+        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 md:hidden animate-scrolls">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Whatsapp Clone</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3 h-full">
             <div className=" flex flex-col gap-3 text-slate-800">
@@ -50,10 +50,10 @@ const Main = () => {
             <img className=" rounded-xl" src={img2} alt="image" />
           </div>
         </div>
-        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden">
+        <div className=" bg-neutral-700 m-3 mt-1 p-5 rounded-lg font-sand flex flex-col gap-3 h-full md:hidden animate-scrolls">
           <h3 className=" bg-slate-100 p-2 rounded-lg text-center w-80">Djamet Pulsa</h3>
           <div className=" bg-slate-100 p-3 rounded-lg flex flex-col gap-3">
-            <div className=" flex flex-col gap-3 text-slate-800">
+            <div className=" flex flex-col gap-3 text-slate-800 h-36">
               <p>This is my first project, can be used to store your reading list also have local storage feature</p>
               <p>Link Project : <a className=" text-blue" href="https://b0oksmanager.netlify.app/">Click Here</a></p>  
             </div>
@@ -75,7 +75,7 @@ const Header = () => {
 
       {/* this is for mobile */}
 
-      <div className="bg-slate-800 p-6 text-white font-sand text-3xl text-center sm:hidden sticky top-0">
+      <div className="bg-slate-800 p-6 text-white font-sand text-3xl text-center sm:hidden sticky top-0 z-20">
       <h1>DjametCoder</h1>
       <i className="fa fa-bars absolute left-7 top-7"></i>
       </div>
